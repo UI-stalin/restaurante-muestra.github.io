@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias Urbanas - Restaurante Moderno</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3170/3170733.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Delicias Urbanas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2 class="animate-text">Sabor que inspira, tradición que enamora</h2>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn btn-primary">Explora el menú</a>
+                <a href="#reservas" class="btn btn-secondary">Reserva ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Menú -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="entradas">Entradas</button>
+                <button class="tab-btn" data-category="platos-fuertes">Platos Fuertes</button>
+                <button class="tab-btn" data-category="bebidas">Bebidas</button>
+                <button class="tab-btn" data-category="postres">Postres</button>
+            </div>
+            
+            <div class="menu-items">
+                <!-- Entradas -->
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a" alt="Carpaccio de Res">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Carpaccio de Res</h3>
+                            <span class="menu-item-price">$12.50</span>
+                        </div>
+                        <p class="menu-item-desc">Finas láminas de res con aceite de oliva, limón, alcaparras y queso parmesano.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Gourmet</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804" alt="Bruschetta Clásica">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Bruschetta Clásica</h3>
+                            <span class="menu-item-price">$9.00</span>
+                        </div>
+                        <p class="menu-item-desc">Pan rústico tostado con tomate, albahaca, ajo y aceite de oliva extra virgen.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag vegan">Vegano</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7" alt="Calamares Fritos">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Calamares Fritos</h3>
+                            <span class="menu-item-price">$14.00</span>
+                        </div>
+                        <p class="menu-item-desc">Calamares crujientes servidos con alioli de limón y perejil fresco.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Mariscos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Platos Fuertes -->
+                <div class="menu-item" data-category="platos-fuertes">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Risotto de Setas">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Risotto de Setas</h3>
+                            <span class="menu-item-price">$18.50</span>
+                        </div>
+                        <p class="menu-item-desc">Cremoso risotto con variedad de setas silvestres, vino blanco y queso parmesano.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag vegan">Vegetariano</span>
+                            <span class="menu-tag gluten-free">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="platos-fuertes">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e" alt="Solomillo Wellington">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Solomillo Wellington</h3>
+                            <span class="menu-item-price">$28.00</span>
+                        </div>
+                        <p class="menu-item-desc">Tierno solomillo envuelto en hojaldre con duxelle de champiñones y jamón serrano.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Especialidad</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="platos-fuertes">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2" alt="Lubina a la Mediterránea">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Lubina a la Mediterránea</h3>
+                            <span class="menu-item-price">$24.50</span>
+                        </div>
+                        <p class="menu-item-desc">Filete de lubina con tomates cherry, aceitunas, alcaparras y hierbas aromáticas.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Pescado</span>
+                            <span class="menu-tag gluten-free">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bebidas -->
+                <div class="menu-item" data-category="bebidas">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813" alt="Sangría Artesanal">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Sangría Artesanal</h3>
+                            <span class="menu-item-price">$8.50</span>
+                        </div>
+                        <p class="menu-item-desc">Vino tinto con frutas frescas maceradas, brandy y un toque de canela.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Bebida Alcohólica</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="bebidas">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87" alt="Limonada de Frutos Rojos">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Limonada de Frutos Rojos</h3>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                        <p class="menu-item-desc">Refrescante limonada casera con fresas, frambuesas y un toque de menta.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag vegan">Vegano</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="bebidas">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336" alt="Café Especial">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Café Especial</h3>
+                            <span class="menu-item-price">$4.50</span>
+                        </div>
+                        <p class="menu-item-desc">Café de especialidad de origen único, preparado en prensa francesa.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Orgánico</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Postres -->
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307" alt="Tiramisú Clásico">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Tiramisú Clásico</h3>
+                            <span class="menu-item-price">$7.50</span>
+                        </div>
+                        <p class="menu-item-desc">Capas de bizcocho empapado en café, mascarpone y cacao en polvo.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Clásico Italiano</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e" alt="Crème Brûlée">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Crème Brûlée</h3>
+                            <span class="menu-item-price">$8.00</span>
+                        </div>
+                        <p class="menu-item-desc">Suave natilla de vainilla con una capa crujiente de azúcar caramelizado.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag gluten-free">Sin Gluten</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1551024709-30af7b9e75f1" alt="Coulant de Chocolate">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Coulant de Chocolate</h3>
+                            <span class="menu-item-price">$9.50</span>
+                        </div>
+                        <p class="menu-item-desc">Bizcocho de chocolate con corazón fundido, acompañado de helado de vainilla.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-tag">Especialidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-options">
+                <a href="#" class="btn btn-primary">Ordenar a domicilio</a>
+                <a href="#" class="btn btn-secondary">Recoger en restaurante</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reservas -->
+    <section id="reservas" class="reservas-section">
+        <div class="container">
+            <h2 class="section-title">Reserva tu mesa</h2>
+            <div class="reservation-form">
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="booking-date">Fecha</label>
+                        <input type="date" id="booking-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-time">Hora</label>
+                        <select id="booking-time" required>
+                            <option value="">Selecciona una hora</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Número de personas</label>
+                        <select id="guests" required>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="more">Más de 6</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="seating">Preferencia</label>
+                        <select id="seating">
+                            <option value="any">Sin preferencia</option>
+                            <option value="interior">Interior</option>
+                            <option value="terraza">Terraza</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reseñas -->
+    <section id="resenas" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="reviews-carousel">
+                <div class="review-item">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Una experiencia gastronómica inolvidable. Los sabores son únicos y el servicio excepcional."</p>
+                    <div class="reviewer">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente">
+                        <span>María González</span>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"El mejor restaurante de la ciudad. Cada plato es una obra de arte y los sabores son extraordinarios."</p>
+                    <div class="reviewer">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+                        <span>Carlos Rodríguez</span>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Ambiente acogedor, comida deliciosa y atención personalizada. ¡Volveré pronto!"</p>
+                    <div class="reviewer">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente">
+                        <span>Laura Martínez</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-links">
+                <a href="#" class="review-platform">
+                    <i class="fab fa-google"></i> Google Reviews
+                </a>
+                <a href="#" class="review-platform">
+                    <i class="fab fa-tripadvisor"></i> TripAdvisor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ubicación -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Encuéntranos</h2>
+            <div class="location-container">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6167761752997!2d-3.7032584842856716!3d40.41694937936409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sPuerta%20del%20Sol%2C%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1623252352744!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Calle Principal 123, Peru, Peru</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p><strong>Lunes a Jueves:</strong> 12:00 - 22:00</p>
+                            <p><strong>Viernes y Sábado:</strong> 12:00 - 00:00</p>
+                            <p><strong>Domingo:</strong> 12:00 - 20:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <p>Estacionamiento disponible a 100m</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-subway"></i>
+                        <p>Metro: Estación Sol (Líneas 1, 2 y 3)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nombre</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Motivo</label>
+                            <select id="contact-subject">
+                                <option value="consulta">Consulta general</option>
+                                <option value="reserva">Problema con reserva</option>
+                                <option value="evento">Evento privado</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea id="contact-message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+34 123 456 789</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@deliciasurbanas.com</p>
+                    </div>
+                    <div class="whatsapp-button">
+                        <a href="https://wa.me/34123456789?text=Hola,%20me%20gustaría%20hacer%20una%20consulta" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Delicias Urbanas</h3>
+                    <p>Sabor que inspira, tradición que enamora</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
+                        <li><a href="#resenas">Reseñas</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbete a nuestro boletín</h4>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="btn btn-primary">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Delicias Urbanas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/reservas.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
